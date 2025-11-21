@@ -12,6 +12,19 @@ A Prometheus exporter for iPerf3 network performance metrics.
 
 The iPerf3 exporter allows iPerf3 probing of endpoints for Prometheus monitoring, enabling you to measure network performance metrics like bandwidth, jitter, and packet loss.
 
+## Compatibilit matrix
+iperf3_exporter --version
+iperf3_exporter, version 1.2.2 (branch: HEAD, revision: d00f7f9)
+  build user:       goreleaser
+  build date:       2025-05-20T08:40:01Z
+  go version:       go1.24.3
+  platform:         linux/amd64
+  tags:             unknown
+
+iperf 3.16 (cJSON 1.7.15)
+## tips
+- client of iperf3_export metrics retrieve: http://{export ip}:{port}/probe?target={iperf server ip and port}
+
 ## Features
 
 - Measure network bandwidth between hosts
